@@ -1,5 +1,5 @@
 {
-    "name": "a6a/from",
+    "name": "a6a/fromdir",
     "description": "Convert cases of an enum to filesystem paths relative to the package root",
     "type": "library",
     "license": "BSD-3-Clause",
