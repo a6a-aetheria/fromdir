@@ -13,7 +13,7 @@ use const DIRECTORY_SEPARATOR;
 
 trait AsDirectoryInPackageRoot
 {
-    public function directory(): string
+    public function dir(): string
     {
         $suffix = $this->name === '___'
             ? ''
@@ -22,23 +22,23 @@ trait AsDirectoryInPackageRoot
         return dirname((new ReflectionClass(ClassLoader::class))->getFileName(), 3) . DIRECTORY_SEPARATOR . $suffix;
     }
 
-    public function dir(): string
+    public function asDirectoryInPackageRoot(): string
     {
-        return $this->directory();
+        return $this->dir();
     }
 
     public function asDir(): string
     {
-        return $this->directory();
+        return $this->dir();
     }
 
     public function asDirectory(): string
     {
-        return $this->directory();
+        return $this->dir();
     }
 
-    public function asDirectoryInPackageRoot(): string
+    public function directory(): string
     {
-        return $this->directory();
+        return $this->dir();
     }
 }
