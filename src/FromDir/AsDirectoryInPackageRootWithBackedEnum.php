@@ -1,6 +1,6 @@
 <?php
 
-namespace A6a\From;
+namespace A6a\FromDir;
 
 use Composer\Autoload\ClassLoader;
 use ReflectionClass;

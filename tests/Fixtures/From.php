@@ -2,8 +2,8 @@
 
 namespace Fixtures;
 
-use A6a\From\AsDirectoryInPackageRoot;
-use A6a\From\NamesDirectoryInPackageRoot;
+use A6a\FromDir\AsDirectoryInPackageRoot;
+use A6a\FromDir\NamesDirectoryInPackageRoot;
 
 enum From implements NamesDirectoryInPackageRoot
 {

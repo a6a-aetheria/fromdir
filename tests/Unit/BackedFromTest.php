@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 use function dirname;
 
-/** @covers \A6a\From\BackedFrom */
+/** @covers \A6a\FromDir\BackedFrom */
 class BackedFromTest extends TestCase
 {
     /**

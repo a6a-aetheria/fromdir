@@ -2,8 +2,8 @@
 
 namespace Fixtures;
 
-use A6a\From\AsDirectoryInPackageRootWithBackedEnum;
-use A6a\From\NamesDirectoryInPackageRoot;
+use A6a\FromDir\AsDirectoryInPackageRootWithBackedEnum;
+use A6a\FromDir\NamesDirectoryInPackageRoot;
 
 enum BackedFrom: string implements NamesDirectoryInPackageRoot
 {

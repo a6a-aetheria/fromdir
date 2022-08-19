@@ -1,6 +1,6 @@
 <?php
 
-namespace A6a\From;
+namespace A6a\FromDir;
 
 /**
  * Enums cannot extend other enums. Make a pure enum like this one and add some cases.
