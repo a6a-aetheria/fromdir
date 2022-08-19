@@ -25,7 +25,7 @@ namespace Foo;
 use A6a\From\AsDirectoryInPackageRootWithBackedEnum;
 use A6a\From\NamesDirectoryInPackageRoot;
 
-enum From implements NamesDirectoryInPackageRoot
+enum From: string implements NamesDirectoryInPackageRoot
 {
     use AsDirectoryInPackageRootWithBackedEnum;
     
