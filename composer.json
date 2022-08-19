@@ -3,6 +3,7 @@
     "description": "Convert cases of an enum to filesystem paths relative to the package root",
     "type": "library",
     "license": "BSD-3-Clause",
+    "version": "0.1.0",
     "autoload": {
         "psr-4": {
             "A6a\\": "src"
