@@ -1,6 +1,6 @@
 {
     "name": "a6a/from",
-    "description": "Convert case labels of a pure enum to filesystem paths relative to the package root",
+    "description": "Convert cases of an enum to filesystem paths relative to the package root",
     "type": "library",
     "license": "BSD-3-Clause",
     "autoload": {

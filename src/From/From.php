@@ -11,4 +11,5 @@ enum From implements NamesDirectoryInPackageRoot
 
     // optional: this case provides the package root
     case ___;
+    case vendor;
 }
