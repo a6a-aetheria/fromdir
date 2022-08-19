@@ -2,6 +2,17 @@
 An interface with implementing traits for both pure and backed enums, which adds methods to convert cases to filesystem
 paths relative to the package root.
 
+Note: this is fresh, with only one consuming use case in a private project. It may not survive the continued refactoring 
+of that codebase, as it may turn out to be more trouble than it is worth to use something like this.
+
+## Use Case
+When referring to files other than automatically loaded classes in the local file system we need to 
+`__DIR__ . '/../config/handlers.php'` and similar. Is there a simple way to access files in the project root of the 
+downstream project, the project which required our package? 
+
+With `From`, resolving the path to the downstream project root is done with `From::___->dir()`. This enables library 
+code to interact with files of the consuming package, especially configuration files, in a _relatively_ simple way.
+
 ## Usage
 >🎪 PHP does not allow us to extend an enum, so usage is a hoop to jump through.
 
