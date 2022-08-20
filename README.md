@@ -41,12 +41,12 @@ enum From: string implements NamesDirectoryInPackageRoot
     use AsDirectoryInPackageRootWithBackedEnum;
     
     case ___ = '___';
-    case BOOTSTRAP_HANDLERS = 'bootstrap___handlers';
+    case BOOTSTRAP___HANDLERS = 'bootstrap___handlers';
 }
 
 
 echo From::___->dir() . 'README.md';
-echo From::BOOTSTRAP_HANDLERS->dir() . 'collision.php';
+echo From::BOOTSTRAP___HANDLERS->dir() . 'collision.php';
 ```
 
 Output:
