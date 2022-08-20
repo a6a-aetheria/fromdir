@@ -7,7 +7,6 @@ use ReflectionClass;
 
 use function dirname;
 use function str_replace;
-use function strtolower;
 
 use const DIRECTORY_SEPARATOR;
 
