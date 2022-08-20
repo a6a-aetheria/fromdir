@@ -23,11 +23,6 @@ code to interact with files of the consuming package, especially configuration f
 Create a new, string-backed `enum` that implements `NamesDirectoryInPackageRoot` and uses
 `AsDirectoryInPackageRootWithBackedEnum`, and add a case label having a value for each path.
 
-Notes:
-- converting case values to paths is case-sensitive!
-- the `___` case is the package root itself
-- where `___` is present other than at the start of a case value, it is replaced with `DIRECTORY_SEPERATOR`
-
 ```php
 <?php
 
@@ -55,17 +50,17 @@ Output:
 /path/to/project/bootstrap/handlers/collision.php
 ```
 
+Notes:
+- converting case values to paths is case-sensitive!
+- the `___` case is the package root itself
+- where `___` is present other than at the start of a case value, it is replaced with `DIRECTORY_SEPERATOR`
+
 ### Mixed-case Enum Cases
 > 💡 Where backed enums with uppercase enum case names are preferred refer to the 
 > [Uppercase Enum Cases](#uppercase-enum-cases) section.
 
 Create a new, pure `enum` that implements `NamesDirectoryInPackageRoot` and uses `AsDirectoryInPackageRoot`, and add a case
 label for each path.
-
-Notes:
-- converting case labels to paths is case-sensitive!
-- the `___` case is the package root itself
-- where `___` is present other than at the start of a case name, it is replaced with `DIRECTORY_SEPERATOR`
 
 ```php
 <?php
@@ -93,6 +88,11 @@ Output:
 /path/to/project/README.md
 /path/to/project/bootstrap/handlers/collision.php
 ```
+
+Notes:
+- converting case labels to paths is case-sensitive!
+- the `___` case is the package root itself
+- where `___` is present other than at the start of a case name, it is replaced with `DIRECTORY_SEPERATOR`
 
 ## License
 See the [LICENSE](LICENSE) file for license rights and limitations (BSD-3-Clause).
