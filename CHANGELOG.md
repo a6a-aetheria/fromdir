@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.2.0] 2022-08-20
+### Fixed
+- broken example in README
+
 ## [0.1.2] 2022-08-19
 ### Changed
 - fixed version in composer.json
