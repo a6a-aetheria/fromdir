@@ -1,6 +1,6 @@
 # FromDir
-An interface with implementing traits for both pure and backed enums, which adds methods to convert cases to filesystem
-paths relative to the package root.
+An interface which adds methods to convert cases to filesystem paths relative to the package root, with implementing 
+traits for both pure and backed enums,
 
 ## Use Case
 When referring to files other than automatically loaded classes in the local file system we need to 
