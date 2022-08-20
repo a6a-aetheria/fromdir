@@ -1,4 +1,4 @@
-# From
+# FromDir
 An interface with implementing traits for both pure and backed enums, which adds methods to convert cases to filesystem
 paths relative to the package root.
 
