@@ -17,9 +17,6 @@ code to interact with files of the consuming package, especially configuration f
 >🎪 PHP does not allow us to extend an enum, so usage is a hoop to jump through.
 
 ### Uppercase Enum Cases
-> 💡 Where pure enums with mixed-case case names are preferred refer to the 
-> [Mixed-case Enum Cases](#mixed-case-enum-cases) section.
-
 Create a new, string-backed `enum` that implements `NamesDirectoryInPackageRoot` and uses
 `AsDirectoryInPackageRootWithBackedEnum`, and add a case label having a value for each path.
 
@@ -44,6 +41,9 @@ echo From::___->dir() . 'README.md';
 echo From::BOOTSTRAP___HANDLERS->dir() . 'collision.php';
 ```
 
+> 💡 Where pure enums with mixed-case case names are preferred refer to the
+> [Mixed-case Enum Cases](#mixed-case-enum-cases) section.
+
 Output:
 ```
 /path/to/project/README.md
@@ -56,9 +56,6 @@ Notes:
 - where `___` is present other than at the start of a case value, it is replaced with `DIRECTORY_SEPERATOR`
 
 ### Mixed-case Enum Cases
-> 💡 Where backed enums with uppercase enum case names are preferred refer to the 
-> [Uppercase Enum Cases](#uppercase-enum-cases) section.
-
 Create a new, pure `enum` that implements `NamesDirectoryInPackageRoot` and uses `AsDirectoryInPackageRoot`, and add a case
 label for each path.
 
@@ -82,6 +79,10 @@ enum From implements NamesDirectoryInPackageRoot
 echo From::___->dir() . 'README.md';
 echo From::bootstrap___handlers->dir() . 'collision.php';
 ```
+
+> 💡 Where backed enums with uppercase enum case names are preferred refer to the
+> [Uppercase Enum Cases](#uppercase-enum-cases) section.
+
 
 Output:
 ```
